@@ -15,7 +15,7 @@ const questions = [
     name: "github",
     message: "Please enter your GitHub username.",
   },
-  // Email inside of Questions
+  // Email Question
   {
     type: "input",
     name: "questionsEmail",
@@ -35,15 +35,17 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// This is the function that creates the ReadMe file.
+function writeToFile(fileName, data) {
+  fs.writeToFile(fileName, data);
+}
 
 // This is the function that initializes the app.
 function init() {
   console.log(`
   =================
   Create your next ReadMe! 
-  Answer the following questions to provide information for your new ReadMe.
+  Answer the following questions to provide information for the ReadMe.
   =================
   `);
 
