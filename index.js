@@ -4,8 +4,6 @@ const fs = require("fs");
 // Creates variable that will be used to get the generateMarkdown data.
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Include packages needed for this application
-
 const questions = [
   // Title of the Project
   {
@@ -41,13 +39,19 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "Please provide usage instructions",
+    message: "Please provide usage instructions.",
   },
   {
     // Contribution section.
     type: "input",
     name: "contribution",
     message: "Who contributed to your project?",
+  },
+  // Testing questions
+  {
+    type: "input",
+    name: "testing",
+    message: "Please provide testing instructions.",
   },
   // License list to choose from.
   {

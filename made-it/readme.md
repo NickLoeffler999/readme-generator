@@ -1,22 +1,22 @@
 
-  # yes
+  # ReadMe Generator
   ## Table of Contents
   - [Description](#description)
-  - [License](#license)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
+  - [License](#license)
   - [Testing](#testing)
   - [Questions](#questions)
   ## Description
-  yes
+  This project was designed for someone who wants to create a README file easily, without the hassle of having to code it all out themselves.
   ## Installation 
-  yes
+  To install this project, use `git clone` in your CLI.
   ## Usage 
-  yes
+  To use this project, navigate to the cloned files after installing them, and then type `node index.js` in your command line.
   ## Contribution
-  yes
+  In this project, I used the code in "potential enigma" to get started. https://github.com/coding-boot-camp/potential-enigma
   ## Testing
   undefined
   ## Questions
-  If you have any questions, comments, or concerns, contact [tes](https://github.com/tes) at yes.
+  If you have any questions, comments, or concerns, contact [Nickloeffler999](https://github.com/Nickloeffler999) at nickloeffler999@gmail.com.
