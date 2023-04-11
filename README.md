@@ -4,6 +4,10 @@
 
 This project was designed for someone who wants to create a README file easily, without the hassle of having to code it all out themselves. This application uses JavaScript and Node.js to generate the README. Working on building it, I've learned a lot more about Node.js and feel much more prepared to use it in the future. This README generator will allow the user to answer a series of specific questions and create a professional complete README based on their responses.
 
+Demo Video:
+
+https://watch.screencastify.com/v/Vkv9g7NzDkSPihAJYH1e
+
 ## Installation
 
 To install this project, use `git clone` in your CLI.
