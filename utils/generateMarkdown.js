@@ -1,11 +1,9 @@
+const inquirer = require("inquirer");
+const fs = require("fs");
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  let badgeLabel = license.replace(" ", "&ensp;");
-  return `[![Generic badge](https://img.shields.io/badge/License-${badgeLabel}-green.svg)](${renderLicenseLink(
-    license
-  )})`;
-}
+function renderLicenseBadge(license) {}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -15,44 +13,32 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
+// This is the function that generates the markdown text for the README
 function generateMarkdown(data) {
-  // console.log(data)
-  const {
-    github,
-    licenseChoice,
-    confirmLiveLink,
-    liveSiteLink,
-    siteDemoLink,
-    ...info
-  } = data;
+  const { username, license, ...info } = data;
 
   return `
-  # ${info.projectTitle}
+  # ${info.title}
   ## Table of Contents
-  - [Description](#project-description)
+  - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
+  - [License](#license)
   - [Testing](#testing)
   - [Questions](#questions)
   ## Description
   ${info.description}
-  ${renderLinkSection(liveSiteLink)}
-  ${renderDemo(siteDemoLink)}
   ## Installation 
-  ${info.installationInstructions}
+  ${info.installation}
   ## Usage 
-  ${info.usageInstructions}
+  ${info.usage}
   ## Contribution
-  ${info.contributionInstructions}
-  ## License
-  ${renderLicenseSection(licenseChoice)}
+  ${info.contribution}
   ## Testing
-  ${info.testInstructions}
+  ${info.testing}
   ## Questions
-  Reach out to the repo owner, [${github}](https://github.com/${github}) at 
-  ${info.questionsEmail}.`;
+  If you have any questions, comments, or concerns, contact [${username}](https://github.com/${username}) at ${info.email}.`;
 }
 
 module.exports = generateMarkdown;
